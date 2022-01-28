@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <?php     requir0('head', $R);?>
+  
+</head>
+<span id="topHouse">
+    <img src="img/house.svg" height="118" width="118" alt="logo">
+</span>
+<body class="login">
+    <nav class="black">
+    
+      <button class="tabButton active" onclick="tabView(event, 'login')">  Login         </button>
+       <button class="tabButton" onclick="tabView(event, 'signup')"> Sign Up </button>
+    <button class="tabButton" onclick="tabView(event, 'lost')"> Lost Password? </button>
+   
+  
+</nav>
+  <div class="error<?=$R['error']?>"></div>
+  <div id="login" class="tab">
+    <div class="flexHead2">Login</div> 
+    <form action="index.php" method="post">
+     <input type="hidden" name="func" value="userLogin">
+     <label for="uEmail"> User Email </label> 
+     <input type="email" name="uEmail" class="w50" required>
+     
+     <label for="uPassword0"> Password </label> 
+     <input type="password" name="uPassword0" class="w50" required>
+       
+     <button class="btnSubmit" type="submit"> Login </button>
+     
+     </form>                   
+    </div>
+                         
+ 
+  <div id="lost" class="tab">
+    <div class="flexHead2">Recover password?</div>
+    <label for="uEmail"> User Email </label> <input type="email" id="reqUEmail" name="uEmail" class="w50" required>
+    <span id="reqLoginMail"> 
+      <button class="btnSubmit" onclick="reqLoginMail(event, 'reqLoginMail','reqUEmail')"> R 
+      </button>
+      <br>
+      <br>
+      <div class="cTxt">Your password will be reset to a random default value.
+</div>
+      <div class="cTxtOrange">Default password will be sent to your email.</div>
+    </span>
+    
+  </div>
+
+  <div id="signup" class="tab">
+    <div class="flexHead2">Signup</div>
+    <form action="index.php" method="post">
+      <input type="hidden" name="func" value="userSignup">
+      <label for="uEmail">    User Email       </label> <input type="email"    name="uEmail"                     required> <br>
+      <label for="uFirstName">User Firstname   </label> <input type="text"     name="uFirstName" pattern="\w+"   required> <br>
+      <label for="uLastName"> User Lastname    </label> <input type="text"     name="uLastName"  pattern="\w+"   required> <br>
+      <label for="uYear">     User Year  (YYYY)</label> <input type="text"     name="uYear"      pattern="\d{4}" value="1234" required> <br>
+      <label for="uPassword0">Password         </label> <input type="password" name="uPassword0" required> &nbsp;
+      <button class="btnSubmit" type="submit">Sign Up</button>
+    </form>
+    <br>  <br>
+  </div>
+
+  <div class="tab0"> 
+   <!---- Smalltown uses cookies to collect all your data.<br>
+    If your data is not free, don't use Smalltown. <br> -->
+    
+   
+  </div>
+
+</body>
+</html>

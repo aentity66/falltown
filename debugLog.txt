@@ -1,0 +1,3107 @@
+A route:userSignup
+select * from user where uEmail='ksfd@sjdhfkjdsh'
+A route:userSignup
+ userLogin 
+select * from user where uEmail='ksfd@sjdhfkjdsh'
+A route:userSignup
+ userLogin 
+userSignup: userSignup
+usersignup
+insert1
+A route:userSignup
+ userLogin 
+userSignup: userSignup
+usersignup
+insert1
+A route:userSignup
+ userLogin 
+userSignup: userSignup
+usersignup
+insert1
+A route:userSignup
+ userLogin 
+userSignup: userSignup
+usersignup
+insert1
+A route:
+ userLogin 
+userSignup: 
+A route:userSignup
+ userLogin 
+userSignup: userSignup
+usersignup
+insert1
+A route:
+ userLogin 
+userSignup: 
+A route:userSignup
+ userLogin 
+userSignup: userSignup
+usersignup
+insert1
+insert2
+insert into user (uName,uEmail,uLastName,uFirstName,uPassword,uYear) values ('nada','gdsg@gfsd','gdf','gfd','$2y$10$mVeZ2EIbOp0ddfl12u5O8.YjT4luvKLTl0adrhsZHP4GaBl6EZh2u','1234')
+insert into user (uName,uEmail,uLastName,uFirstName,uPassword,uYear) values ('nada','gdsg@gfsd','gdf','gfd','$2y$10$mVeZ2EIbOp0ddfl12u5O8.YjT4luvKLTl0adrhsZHP4GaBl6EZh2u','1234')
+select * from user where uEmail='gdsg@gfsd'
+B route:userEvent
+A route:userEventFeed
+select * from session where sHash='0a9c6d60139a11c2e068cdd0a7087be877669835'
+select * from user where uId='10'
+B route:userEventFeed
+select uId2 from friend where uId1='10' and relation & 6
+select rpId from post where ruId in (-1,10) order by pTime desc limit 0,100
+A route:postSubmit
+select * from session where sHash='0a9c6d60139a11c2e068cdd0a7087be877669835'
+select * from user where uId='10'
+B route:postSubmit
+insert1
+insert2
+insert into post (uId,ruId,rpId,pTxt) values ('10','10',null,'hello world!')
+select last_insert_id()
+A route:userSearch
+select * from session where sHash='0a9c6d60139a11c2e068cdd0a7087be877669835'
+select * from user where uId='10'
+B route:userSearch
+select * from user where uId!='10' && (uLastName like 'sjh%' or uFirstName like 'sjh%')
+select * from friend where uId1='10'
+A route:userProfile
+select * from session where sHash='0a9c6d60139a11c2e068cdd0a7087be877669835'
+select * from user where uId='10'
+B route:userProfile
+select * from user where uId='10'
+A route:userProfileFeed
+select * from session where sHash='0a9c6d60139a11c2e068cdd0a7087be877669835'
+select * from user where uId='10'
+B route:userProfileFeed
+select rpId from post where ruId='10' order by pTime desc limit 0,100
+select * from post where rpId in (12) order by pTime
+A route:userEvent
+select * from session where sHash='0a9c6d60139a11c2e068cdd0a7087be877669835'
+select * from user where uId='10'
+B route:userEvent
+A route:userEventFeed
+select * from session where sHash='0a9c6d60139a11c2e068cdd0a7087be877669835'
+select * from user where uId='10'
+B route:userEventFeed
+select uId2 from friend where uId1='10' and relation & 6
+select rpId from post where ruId in (-1,10) order by pTime desc limit 0,100
+select * from post where rpId in (12) order by pTime
+A route:userEvent
+select * from session where sHash='0a9c6d60139a11c2e068cdd0a7087be877669835'
+select * from user where uId='10'
+B route:userEvent
+A route:userEventFeed
+select * from session where sHash='0a9c6d60139a11c2e068cdd0a7087be877669835'
+select * from user where uId='10'
+B route:userEventFeed
+select uId2 from friend where uId1='10' and relation & 6
+select rpId from post where ruId in (-1,10) order by pTime desc limit 0,100
+select * from post where rpId in (12) order by pTime
+A route:userProfile
+select * from session where sHash='0a9c6d60139a11c2e068cdd0a7087be877669835'
+select * from user where uId='10'
+B route:userProfile
+select * from user where uId='10'
+A route:userProfileFeed
+select * from session where sHash='0a9c6d60139a11c2e068cdd0a7087be877669835'
+select * from user where uId='10'
+B route:userProfileFeed
+select rpId from post where ruId='10' order by pTime desc limit 0,100
+select * from post where rpId in (12) order by pTime
+A route:userAccount
+select * from session where sHash='0a9c6d60139a11c2e068cdd0a7087be877669835'
+select * from user where uId='10'
+B route:userAccount
+select uId1 from friend where uId2='10' and relation&8
+select * from user where uId in (-1)
+A route:userLogout
+select * from session where sHash='0a9c6d60139a11c2e068cdd0a7087be877669835'
+select * from user where uId='10'
+B route:userLogout
+A route:userLogout
+A route:userLogout
+A route:userLogout
+A route:userLogout
+A route:userSignup
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userLogout
+B route:userLogout
+A route:userLogin
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userAccount
+B route:userAccount
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userLogout
+B route:userLogout
+A route:userLogin
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userAccount
+B route:userAccount
+A route:userAccount
+B route:userAccount
+A route:userAccount
+B route:userAccount
+A route:userAccount
+B route:userAccount
+A route:userAccount
+B route:userAccount
+A route:userAccount
+B route:userAccount
+A route:userAccount
+B route:userAccount
+A route:userAccount
+B route:userAccount
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userLogout
+B route:userLogout
+A route:
+A route:userSignup
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userAccount
+B route:userAccount
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userLogout
+B route:userLogout
+A route:userLogin
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:userSignup
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:postSubmit
+B route:postSubmit
+A route:userAccount
+B route:userAccount
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:
+A route:userSignup
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userSignup
+B route:userSignup
+C unauthorized :userSignup
+A route:userSignup
+B route:userSignup
+C unauthorized :userSignup
+A route:userSignup
+B route:userSignup
+C unauthorized :userSignup
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userLogout
+B route:userLogout
+A route:userLogout
+A route:userLogout
+A route:userLogin
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userLogin
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userAccount
+B route:userAccount
+A route:userAccount
+B route:userAccount
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userAccount
+B route:userAccount
+A route:userAccount
+B route:userAccount
+A route:userAccount
+B route:userAccount
+A route:userAccount
+B route:userAccount
+A route:userAccount
+B route:userAccount
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userAccount
+B route:userAccount
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userAccount
+B route:userAccount
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userAccount
+B route:userAccount
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userAccount
+B route:userAccount
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userAccount
+B route:userAccount
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userAccount
+B route:userAccount
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userAccount
+B route:userAccount
+A route:userLogout
+B route:userLogout
+A route:userLogin
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userLogout
+B route:userLogout
+A route:userLogin
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userLogout
+B route:userLogout
+A route:userLogin
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userLogout
+B route:userLogout
+A route:userLogin
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userAccount
+B route:userAccount
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userAccount
+B route:userAccount
+A route:userLogout
+B route:userLogout
+A route:userLogin
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEventFeed
+B route:userEventFeed
+A route:userEventFeed
+B route:userEventFeed
+A route:userEventFeed
+B route:userEventFeed
+A route:userEventFeed
+B route:userEventFeed
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userAccount
+B route:userAccount
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userAccount
+B route:userAccount
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userLogout
+B route:userLogout
+A route:userLogin
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userAccount
+B route:userAccount
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userProfile
+B route:userProfile
+userProfile stmnt:
+userProfile:Array
+(
+    [0] => 14
+    [uId] => 14
+    [1] => nada
+    [uName] => nada
+    [2] => freddie@onne
+    [uEmail] => freddie@onne
+    [3] => Local
+    [uLastName] => Local
+    [4] => Freddie
+    [uFirstName] => Freddie
+    [5] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [uPassword] => $2y$10$gQeUgPTeS7t/gmNt46AD0eOBkR62F1Q4ULc3rIi7z0AQanlx6xIVm
+    [6] => 1234
+    [uYear] => 1234
+    [7] => 
+    [uCourse] => 
+    [8] => 
+    [uImageId] => 
+)
+
+A route:userProfileFeed
+B route:userProfileFeed
+A route:userEvent
+B route:userEvent
+A route:userEventFeed
+B route:userEventFeed
+A route:userAccount
+B route:userAccount
+A route:userLogout
+B route:userLogout

@@ -1,0 +1,85 @@
+<!doctype html>
+<html id="docuTop">
+<head>
+  <?php 
+    requir0('head', $R);
+  ?>
+
+  <script>
+    var profileId    = '<?=$R['profileId']?>';
+    var uId          = '<?=$R['uId']?>';
+    var profileImage = '<?=$R['profile']['uImageId']?>';
+    var feedType     = '<?=$R['feedType']?>';
+    var feedPosition = 0;
+    var maxScrollY   = window.scrollY;
+    var cTimeOut     = 0;
+
+    function buildTree( tree ) {
+      let str = '';
+      for ( var i in tree ) {
+        var p = tree[i];
+        str += postCreate( p, buildTree( p['child'] )  );
+      }
+      return str;
+    }  
+    function buildPostTree( txt ) {
+       var tree = JSON.parse( txt );
+       if ( tree.length > 0 ) feedPosition+= 100; 
+       var contPane = gid( 'pId' );
+       contPane.innerHTML += buildTree( tree );  
+    }
+    function userFeed() {
+      var sendTxt = `func=${feedType}&profileId=${profileId}&feedPosition=${feedPosition}`;
+      httpPost( sendTxt, buildPostTree );
+    }
+  </script>
+</head>
+
+<body class="feed">
+  
+  <?php requir0( 'headPane', $R ); ?>
+  
+  <div id="pId" class="contPane"> <!-- pId is used by script -->
+    <div class="feedProfileBox">
+    <img src="img/<?=$R['profile']['uImageId']?>" width="100"> 
+    <?php 
+    if ( $R['uId'] != $R['profileId'] ) {
+      echo '<span id="row_'.$R['profileId'].'">';
+      echo expressRelation( $R, $R['profile']);
+      echo "</span>";
+    }
+    ?>
+    </div>
+
+    <button class="postButton" onclick="postSubmit0('');"> comment </button>
+    <span class="postComment" id="comment">  </span> 
+  </div>
+
+  <div class="footPane"> 
+  -- empty foot pane
+  </div>
+
+  <script>   
+    /* **************************************************************** */
+    /* When user has a long feed it is not convenient to load everything.
+    It wastes bandwidth, server resources and if the feed is long enough
+    it may be too much for the browser to hande. We try to deliver parts
+    of the feed on request. When the user scrolls down we try to catch
+    up and fill the feed */
+    /* **************************************************************** */
+    document.addEventListener( 'scroll', 
+      function(e) {
+        if ( window.scrollY > maxScrollY ) {
+          /* scroll fires a lot. These two lines works as a brake */
+          clearTimeout( cTimeOut );
+          cTimeOut = setTimeout( userFeed , 1000 ); 
+          /* **************************************************** */   
+          maxScrollY = window.scrollY;
+       }
+      } 
+    );
+
+    userFeed(); // first load
+  </script>
+</body>
+</html>

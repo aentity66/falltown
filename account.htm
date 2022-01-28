@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+  <?php 
+    requir0('head', $R );
+  ?>
+  <script></script>
+  <style>
+    body.userAccount {
+      background-color:orange;
+    }
+    label.uLabel {
+      width: 100px;
+      display: inline-block;
+    }
+    input.uField {
+      background-color: lightcoral;
+    }
+  </style>
+</head>  
+<body class="userAccount">
+
+  <?php 
+    requir0('headPane', $R ); 
+  ?>
+
+  <div class="contPane"> 
+    <?php 
+      $U = &$R['user']; 
+    ?>
+    <form action="?func=userAccount" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="subFunc" value="update">
+      <img src="img/<?=$U['uImageId']?>"> <br>
+      Select image to upload:  <input type="file" name="profileImage" id="fileToUpload"> <br>
+    <?php  
+    $userFields = [  'uFirstName' => 'First name',  'uLastName'  => 'Last name', 
+      'uEmail' => 'Email',   'uYear' => 'Year',  'uCourse'    => 'Course'  ];
+    foreach ( $userFields as $key => $val ) {
+      echo <<<html
+      <label class="uLabel" for="$key">$val </label>
+      <input type="text" id="$key" class="uField" name="$key" value="$U[$key]"> <br>
+html;
+    }
+    ?>
+    <br>
+    <a href="https://www.w3schools.com/howto/howto_js_toggle_password.asp"> Howto Toggle Password</a><br>
+    Password  
+    <?php if (isset($R['updateNow']) ) { ?>
+    <input  class="updateNow" autofocus type="password" name="uPassword" value=""> Update now!
+    <?php } else { ?>
+      <input  type="password" name="uPassword" value=""> 
+    <?php } ?>
+    <br>
+    <button type="submit"> Update Account </button>
+    </form>
+    <br>    <br>
+  <?php
+  if ( sizeof( $R['requester'] ) > 0 ) {
+    echo "<h2> Friend requests </h2>";
+    foreach( $R['requester'] as $u ) {
+      echo <<<html
+      <div>
+        <a href=""> $u[uFirstName] $u[uLastName] </a>
+        <span id="nokok$R[uId]_$u[uId]">
+        <span class="button" onclick="requestAccept('$R[uId]', '$u[uId]');"> Accept   </span>
+        <span class="button" onclick="requestDeny('$R[uId]', '$u[uId]');">  Deny  </span>
+        </span>
+      </div>
+html;
+    }
+  } else {
+    echo "<h2> No friend requests </h2>";
+  }
+
+  ?>
+  <br> &nbsp; <br> 
+
+  </div>
+  <div class="footPane"> 
+    
+  </div>
+
+</body>
+</html>
